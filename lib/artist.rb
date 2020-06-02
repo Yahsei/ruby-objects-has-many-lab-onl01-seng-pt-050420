@@ -12,7 +12,7 @@ class Artist
   
   def songs
     Song.all.select do |song|
-      song.artist == artist
+      song.artist == self
   end
     
 
